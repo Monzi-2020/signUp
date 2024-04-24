@@ -64,6 +64,7 @@ img{
 }
 
 /* Right text field */
+
 .right_body{
     display: flex;
     flex-direction: column;
@@ -81,8 +82,14 @@ img{
 }
 
 .body_text.login_text{
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px 50px;
+}
+
+a{
+    text-decoration: none;
+    color:#596D48;
+    font-weight: 600;
 }
 
 /* Form */
@@ -130,9 +137,9 @@ input:focus{
     box-shadow: 0px 5px 5px #8080805e;;
 }
 
-/* input:required + span::after{
+input + span::after{
     display: block;
-    content:"required*";
+    content:"optional*";
     width:15px;
     height: 15px;
     font-family: inherit;
@@ -140,5 +147,20 @@ input:focus{
     position: absolute;
     top: 0px;
     right: 30px;
-    color: rgba(249, 60, 60, 0.532);
-} */
+    color: rgba(98, 96, 96, 0.68);
+}
+
+/* Button */
+
+button{
+    border: none;
+    padding: 15px 35px;
+    margin: 30px 52px;
+    color: white;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #596D48;
+    box-shadow: 1px 2px 5px gray;
+}
