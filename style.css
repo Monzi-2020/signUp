@@ -15,9 +15,7 @@
 :root{
     --logo-font: 'logoFont', Tahoma, Verdana, sans-serif;
     --main-font: 'mainFont', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
-
 
 body{
     display: flex;
@@ -73,7 +71,6 @@ img{
     background-color: rgb(235 243 236);
     font-family: var(--main-font);
     justify-content: center;
-    gap: 20px;
     
 }
 
@@ -85,6 +82,7 @@ img{
 
 .body_text.login_text{
     font-size: 20px;
+    padding: 20px 50px;
 }
 
 /* Form */
@@ -92,7 +90,7 @@ img{
 .form_box{
     background-color: #fffefe;
     font-family: inherit;
-    padding:20px 250px 20px 20px;
+    padding:20px 250px 20px 50px;
     box-shadow: 0px 5px 5px #8080805e;
 }
 
@@ -115,8 +113,32 @@ label{
     display: flex;
     flex-direction: column;
     width: 250px;
+    font-size: 16px;
+    position: relative;
 }
 
 input{
-    padding:3px;
+    padding:4px;
+    appearance: none;
+    border:1px solid #dee0e3;
+    border-radius: 3px;
 }
+
+input:focus{
+    outline: none;
+    border:2px solid rgba(24, 24, 247, 0.718);
+    box-shadow: 0px 5px 5px #8080805e;;
+}
+
+/* input:required + span::after{
+    display: block;
+    content:"required*";
+    width:15px;
+    height: 15px;
+    font-family: inherit;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    color: rgba(249, 60, 60, 0.532);
+} */
