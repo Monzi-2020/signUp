@@ -80,11 +80,43 @@ img{
 .right_body > .body_text{
     font-family: inherit;
     font-size: 24px;
+    padding: 50px;
+}
+
+.body_text.login_text{
+    font-size: 20px;
 }
 
 /* Form */
 
-form{
+.form_box{
     background-color: #fffefe;
     font-family: inherit;
+    padding:20px 250px 20px 20px;
+    box-shadow: 0px 5px 5px #8080805e;
+}
+
+.form_box > .form_text{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+.input_box > .box{
+    margin: 5px 50px 5px 5px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input{
+    padding:3px;
 }
