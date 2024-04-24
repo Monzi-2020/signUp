@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'logoFont';
+    src: url(./Norse-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --logo-font: 'logoFont', Tahoma, Verdana, sans-serif;
+    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    font-family: var(--main-font);
+    margin: 0;
+}
+
+/* Left with background and logo */
+
+.left_body{
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-size: 100vh 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+}
+
+.logobox{
+    background-color: rgba(0, 0, 0, 0.536);
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+.logo_text{
+    font-size: 3rem;
+    color: white;
+    margin: 3% 10px;
+    padding-top: 20px;
+    font-family: var(--logo-font),Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    padding: 10px;
+}
+
+.copyright{
+    font-size: 0.8rem;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.856);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Right text field */
+.right_body{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+}
+
+/* Form */
