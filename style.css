@@ -5,9 +5,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'mainFont';
+    src: url(./Actor/Actor-Regular.ttf) format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
 :root{
     --logo-font: 'logoFont', Tahoma, Verdana, sans-serif;
-    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --main-font: 'mainFont', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
@@ -63,6 +70,21 @@ img{
     display: flex;
     flex-direction: column;
     flex:2;
+    background-color: rgb(235 243 236);
+    font-family: var(--main-font);
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.right_body > .body_text{
+    font-family: inherit;
+    font-size: 24px;
 }
 
 /* Form */
+
+form{
+    background-color: #fffefe;
+    font-family: inherit;
+}
