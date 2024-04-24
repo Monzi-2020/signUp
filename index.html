@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="left_body">
@@ -24,42 +25,44 @@
                 <div class="input_box">
                     <div class="box">
                         <label for="first_name">FIRST NAME
-                        <input type="text" id="first_name" name="first_name" required>
+                        <input type="text" id="first_name" name="first_name" required/>
                     </label>
                     </div>
                     <div class="box">
                         <label for="last_name">LAST NAME
-                        <input type="text" id="last_name" name="last_name" required>
+                        <input type="text" id="last_name" name="last_name" required/>
                     </label>
                     </div>
                     <div class="box">
                         <label for="email">EMAIL
                         <input type="email" id="email" name="email" required
-                        placeholder="myname@email.com">
+                        placeholder="myname@email.com"/>
                     </label>
                     </div>
                     <div class="box">
                         <label for="phone">PHONE NUMBER
                         <input type="tel" id="phone" name="phone_number"
-                        placeholder="012-345-6789">
+                        placeholder="012-345-6789"/>
                         <span></span>
                     </label>
                     </div>
                     <div class="box">
-                        <label for="pswd">PASSWORD
-                        <input type="password" id="pswd" name="password" required>
+                        <label for="pswd1">PASSWORD
+                        <input type="password" id="pswd1" name="password" required />
                     </label>
                     </div>
                     <div class="box">
-                        <label for="cf_pswd">CONFIRM PASSWORD
-                        <input type="password" id="cf_pswd" name="confirm_pswd" required>
+                        <label for="pswd2">CONFIRM PASSWORD
+                        <input type="password" id="pswd2" name="confirm_pswd" required/>
                     </label>
+                    <div id="pswd_alert"></div>
                     </div>
                 </div>
             </div>
-            <button type="submit">Get Some Cabbage</button>
+            <button type="submit" id="subBtn">Get Some Cabbage</button>
         </form>
         <div class="body_text login_text">Already have an account? <a href="">Log in</a></div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
