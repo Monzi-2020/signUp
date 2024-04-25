@@ -20,6 +20,8 @@ function comparePswd(val1, val2){
     }
 }
 
+// Password elements eventlistner
+
 pswd1.addEventListener('blur', ()=>{
     const val1 = pswd1.value;
     const val2 = pswd2.value;
@@ -39,14 +41,10 @@ pswd2.addEventListener('blur', ()=>{
     else if(val1 === "" || val2 === ""){
         pswd_alert.textContent = "";
     }
-    // else if(val1 === "" || val2 === ""){
-    //     pswd_alert.classList.toggle("noPsswd");
-    //     pswd_alert.textContent = "Please put your password.";
-    // }
-    
     
 });
 
+// Button eventlistner
 
 
 subBtn.addEventListener('click',()=>{
