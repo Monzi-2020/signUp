@@ -27,9 +27,8 @@ body{
 /* Left with background and logo */
 
 .left_body{
-    background-image: url(./background.png);
-    background-repeat: no-repeat;
-    background-size: 100vh 100vh;
+    background-image: url(./b1.png);
+    background-size: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,6 +40,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 130px;
+    padding: 10px;
 }
 
 .logo_text{
@@ -87,7 +87,6 @@ img{
 }
 
 a{
-    text-decoration: none;
     color:#596D48;
     font-weight: 600;
 }
@@ -169,3 +168,27 @@ button{
     background-color: #596D48;
     box-shadow: 1px 2px 5px gray;
 }
+
+button:hover{
+    background-color: #404f33;
+    box-shadow: 1px 3px 7px rgb(172, 171, 171);
+    cursor: pointer;
+}
+
+
+/* Password indicator */
+
+#pswd_alert.conPsswd{
+    font-family: inherit;
+    font-size: 13px;
+    color: #089c0b;
+
+}
+
+#pswd_alert.inPsswd{
+    font-family: inherit;
+    font-size: 13px;
+    color: #b92c09;
+
+}
+
